@@ -13,10 +13,10 @@ if (!amountDroid) {
     alert('Отменено пользователем!');
 } else if(amountDroid) {
     totalPrice = amountDroid * priceDroid;
-}
 
-if (totalPrice > credits) {
-    console.log('Недостаточно средств');
-} else if(totalPrice < credits) {
-    console.log(`Вы приобрели ${amountDroid} дроидов на счету осталось ${credits - totalPrice}`);
+    if (totalPrice > credits) {
+        console.log('Недостаточно средств');
+    } else if(totalPrice < credits) {
+        console.log(`Вы приобрели ${amountDroid} дроидов на счету осталось ${credits - totalPrice}`);
+    }
 }
